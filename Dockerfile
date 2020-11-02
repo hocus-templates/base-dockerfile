@@ -20,4 +20,5 @@ RUN useradd -ms /bin/bash hocus && \
 
 USER hocus
 RUN mkdir -p /home/hocus/.vscode-server/data/Machine/
+RUN touch /home/hocus/.sudo_as_admin_successful
 WORKDIR /home/hocus/code
